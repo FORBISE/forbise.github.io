@@ -2,22 +2,17 @@
 <html lang='en' class=''>
 
 <head>
-
   <meta charset='UTF-8'>
   <title>CodePen Demo</title>
-
   <meta name="robots" content="noindex">
-
   <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
   <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
   <link rel="canonical" href="https://codepen.io/alexdevero/pen/BRLKBz">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <style id="INLINE_PEN_STYLESHEET_ID">
+    /* Tu je tvoj CSS kód */
     html,
     body,
     .wrapper {
@@ -79,23 +74,29 @@
       margin: 0;
     }
 
-    .footer__links {
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding-bottom: 12px;
       text-align: center;
+    }
+
+    .footer__links {
       list-style-type: none;
+      padding: 0;
     }
 
     .footer__links li {
       display: inline-block;
-    }
-
-    .footer__links li:nth-of-type(n+2) {
-      margin-left: 12px;
+      margin: 0 5px;
     }
 
     .footer__links a {
-      padding: 8px 0;
       display: block;
-      width: 41px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
       text-align: center;
       color: #fff;
       border: 1px solid;
@@ -108,11 +109,9 @@
     }
 
     .footer__links .fa {
-      vertical-align: middle;
-      font-size: 21px;
+      font-size: 16px;
     }
   </style>
-
 </head>
 
 <body>
@@ -151,11 +150,11 @@
 
     <footer>
       <ul class="footer__links">
-        <li><a href="https://go.forbies.eu/twitter"><span class="fa fa-twitter"></span></a></li>
-        <li><a href="https://go.forbies.eu/facebook"><span class="fa fa-facebook"></span></a></li>
-        <li><a href="https://go.forbies.eu/github"><span class="fa fa-github"></span></a></li>
-        <li><a href="https://go.forbies.eu/instagram"><span class="fa fa-instagram"></span></a></li>
-        <li><a href="https://go.forbies.eu/telegram"><span class="fa fa-telegram"></span></a></li>
+        <li><a href="https://go.forbies.eu/twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://go.forbies.eu/facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://go.forbies.eu/github"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://go.forbies.eu/instagram"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://go.forbies.eu/telegram"><i class="fa fa-telegram"></i></a></li>
       </ul>
     </footer>
   </div>
@@ -183,7 +182,6 @@
       }
     }, 1000);
   </script>
-
 </body>
 
 </html>
