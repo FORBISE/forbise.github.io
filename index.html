@@ -18,7 +18,99 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style id="INLINE_PEN_STYLESHEET_ID">
-    /* Tu je tvoj CSS kód */
+    html,
+    body,
+    .wrapper {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font: 1rem/1.516 "Montserrat", Arial, sans-serif;
+    }
+
+    .wrapper {
+      position: relative;
+      background: url(https://source.unsplash.com/vZlTg_McCDo/1920x1080) no-repeat center center/cover;
+    }
+
+    .wrapper:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(33, 33, 33, 0.25);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .countdown > div {
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .countdown__number {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .countdown__label {
+      font-size: 16px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .footer__links {
+      text-align: center;
+      list-style-type: none;
+    }
+
+    .footer__links li {
+      display: inline-block;
+    }
+
+    .footer__links li:nth-of-type(n+2) {
+      margin-left: 12px;
+    }
+
+    .footer__links a {
+      padding: 8px 0;
+      display: block;
+      width: 41px;
+      text-align: center;
+      color: #fff;
+      border: 1px solid;
+      border-radius: 50%;
+      transition: opacity 0.235s ease-in-out;
+    }
+
+    .footer__links a:hover {
+      opacity: 0.5;
+    }
+
+    .footer__links .fa {
+      vertical-align: middle;
+      font-size: 21px;
+    }
   </style>
 
 </head>
@@ -34,23 +126,23 @@
 
       <div class="countdown">
         <div class="countdown__days">
-          <div class="number"></div>
-          <span class>Days</span>
+          <div class="countdown__number"></div>
+          <div class="countdown__label">Days</div>
         </div>
 
         <div class="countdown__hours">
-          <div class="number"></div>
-          <span class>Hours</span>
+          <div class="countdown__number"></div>
+          <div class="countdown__label">Hours</div>
         </div>
 
         <div class="countdown__minutes">
-          <div class="number"></div>
-          <span class>Minutes</span>
+          <div class="countdown__number"></div>
+          <div class="countdown__label">Minutes</div>
         </div>
 
         <div class="countdown__seconds">
-          <div class="number"></div>
-          <span class>Seconds</span>
+          <div class="countdown__number"></div>
+          <div class="countdown__label">Seconds</div>
         </div>
       </div>
 
@@ -80,10 +172,10 @@
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      document.querySelector('.countdown__days .number').innerHTML = days;
-      document.querySelector('.countdown__hours .number').innerHTML = hours;
-      document.querySelector('.countdown__minutes .number').innerHTML = minutes;
-      document.querySelector('.countdown__seconds .number').innerHTML = seconds;
+      document.querySelector('.countdown__days .countdown__number').innerHTML = days;
+      document.querySelector('.countdown__hours .countdown__number').innerHTML = hours;
+      document.querySelector('.countdown__minutes .countdown__number').innerHTML = minutes;
+      document.querySelector('.countdown__seconds .countdown__number').innerHTML = seconds;
 
       if (distance < 0) {
         clearInterval(x);
