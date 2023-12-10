@@ -1,148 +1,65 @@
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
   <meta charset="UTF-8">
   
 
-    
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
 
-    <meta name="apple-mobile-web-app-title" content="ALLSTUDIOS">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
 
-    
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
 
-
-
-  <meta charset="utf-8">
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-  <title>© ALL STUDIOS - Comming Soon</title>
-
-  <link rel="stylesheet" media="screen" href="/css/01.css" />
-  
-
-   
-
-    <meta name="apple-mobile-web-app-title" content="ALLSTUDIOS">
-
-    
-
-
-
-
-
-  <title>© ALL STUDIOS - Comming Soon</title>
-
-  <style>
-    html { font-size: 15px; }
-    html, body { margin: 0; padding: 0; min-height: 100%; }
-    body { height:100%; display: flex; flex-direction: column; }
-    .referer-warning {
-      background: black;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-      padding: 0.75em;
-      color: white;
-      text-align: center;
-      font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, system-ui, Sans-Serif;
-      line-height: 1.2;
-      font-size: 1rem;
-      position: relative;
-      z-index: 2;
-    }
-    .referer-warning span { font-family: initial; }
-    .referer-warning h1 { font-size: 1.2rem; margin: 0; }
-    .referer-warning a { color: #56bcf9; }
-  </style>
-</head>
-
-
-
-  <div id="result-iframe-wrap" role="main">
-    <iframe
-      id="result"
-      srcdoc="<!DOCTYPE html>
-<html lang=&quot;en&quot; >
-
-<head>
-  <meta charset=&quot;UTF-8&quot;>
-  
-
-   
-
-    <meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;ALLSTUDIOS&quot;>
-
-   
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
 
 
 
   
-    <script src=&quot;https://allstudios.eu/js/01.js&quot;></script>
-
-
   
-  
+
+  <title>CodePen - Simple 404 Page</title>
+
+    <link rel="canonical" href="https://codepen.io/nuski/pen/QWybpLN">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   
   
   
 <style>
-@import url(&quot;https://fonts.googleapis.com/css?family=Raleway:700|Roboto:300&quot;);
-body, html {
-  position: relative;
-  width: 100%;
-  height: 100%;
+body {
+  background-color:	#191970;
+  color: #ff6e6e;
+  font-family: "Muli", sans-serif;
+  font-weight: 100;
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  font-family: &quot;Roboto&quot;, serif;
-  background: #000529;
-  overflow: hidden;
 }
 
-.hero {
-  display: flex;
-  height: 100%;
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
   align-items: center;
-  color: white;
+  display: flex;
+  justify-content: center;
 }
 
-.hero-content {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px 60px 0;
+.position-r {
+  position: relative;
 }
 
-h1 {
-  font-family: &quot;Ralewey&quot;, sans-serif;
-  color: white;
-  font-size: 6vw;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  z-index: 10;
-  margin-bottom: 32px;
-}
-h1 span {
-  display: inline-block;
+.code {
+  border-right: 3px solid;
+  font-size: 55px;
+  padding: 0 10px 0 10px;
+  text-align: center;
 }
 
-h2 {
-  font-size: 20px;
-  letter-spacing: 0.02em;
-}
-
-#container-p5 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: 0;
-}
-
-.highlight {
-  color: #2746ff;
+.message {
+  font-size: 40px;
+  text-align: center;
 }
 </style>
 
@@ -154,295 +71,17 @@ h2 {
   
 </head>
 
-<body translate=&quot;no&quot;>
-  <!-- this is not meant to be responsive yet, plz watch it fullscreen for a better experience -->
+<body translate="no">
+  <div class="flex-center position-r full-height">
+  <div class="code">
+    404 </div>
 
-<div class=&quot;hero&quot;>
-  <div id=&quot;container-p5&quot;></div>
-  <div class=&quot;hero-content&quot;>
-    <h1><span class=&quot;highlight&quot;>404 PAGE</span>
-      <br><span>This page is unavailable or deleted.<span></h1>
-    <h2>Contact: office@allstudios.eu</h2>    
-  </div>
+  <div class="message" style="padding: 10px;">
+    NOT FOUND </div>
 </div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
-      <script id=&quot;rendered-js&quot; >
-var btcPath = &quot;https://image.ibb.co/f4nCHS/btcLogo.jpg&quot;;
-
-var sketch = function (p) {
-
-  var containerWidth = $('#container-p5').width();
-  var containerHeight = $('#container-p5').height();
-
-  /* eslint-disable */
-  p5.disableFriendlyErrors = true;
-  var btc;
-  var Stars = [];
-  var smallSize = 80;
-  var scaleFactor = containerWidth * 0.35 / smallSize;
-  var starsColor = ['#0d2a75', '#1d5cd2', '#1c3498'];
-  var translate = {
-    x: containerWidth / 2,
-    y: (containerHeight - containerWidth * 0.35) / 2 };
-
-  var positions = {
-    'btc': [] };
-
-
-  var RandomStars = [];
-
-  function translatePoint(vector) {
-    var newX = vector.x * scaleFactor + translate.x;
-    var newY = vector.y * scaleFactor + translate.y;
-    var newVec = p.createVector(newX, newY);
-    return newVec;
-  }
-
-
-  var center = translatePoint(p.createVector(smallSize / 2, smallSize / 2));
-
-  var bgColor = p.color('#000529');
-
-
-
-  // PARTICLE OF THE IMAGE
-  function Star(vector) {
-    this.x = vector.x;
-    this.y = vector.y;
-    this.pos = p.createVector(p.random(containerWidth * -1.2, containerWidth * 1.2), p.random(containerWidth * -1.2, containerHeight * 1.2)); // initial position
-    this.target = p.createVector(this.x, this.y);
-    this.color = p.random(starsColor);
-    this.size = p.random(2, 4);
-    this.vel = p.createVector(p.random(-5, 6), p.random(-4, 6));
-    this.acc = p.createVector();
-    this.maxSpeed = 10;
-    this.maxForce = 2;
-    this.weight = p.random(0.5, 2.5);
-    this.allowRepulse = false;
-    this.goingCenter = false;
-
-    this.alpha;
-  }
-
-  Star.prototype.update = function () {
-    this.pos.add(this.vel);
-    this.vel.add(this.acc);
-    this.alpha;
-    this.acc.mult(0);
-  };
-
-  Star.prototype.move = function () {
-    var attract = this.attract(this.target);
-    this.appForce(attract);
-
-    var mouse = p.createVector(p.mouseX, p.mouseY);
-    var repulse = this.repulse(mouse);
-    this.appForce(repulse);
-
-  };
-
-  Star.prototype.appForce = function (value) {
-    this.acc.add(value);
-  };
-
-  Star.prototype.modAlpha = function () {
-    var desired = p5.Vector.sub(this.target, this.pos);
-    var d = desired.mag();
-    var opacity = p.map(d, 0, 800, 255, 0);
-    return opacity;
-  };
-
-  Star.prototype.attract = function (target) {
-    var desired = p5.Vector.sub(target, this.pos);
-    var d = desired.mag(); // distance between target and position
-    if (d < 100 &amp;&amp; !this.goingCenter) {
-      this.vel.limit(10);
-      if (d < 10 &amp;&amp; !this.allowRepulse) {
-        var G = 70;
-        var distancesq = desired.magSq();
-
-        var force = distancesq / G;
-        desired.setMag(force * this.weight);
-        this.vel.limit(0.7);
-        return desired;
-      }
-    } else {
-      var G = 400000;
-      var distancesq = desired.magSq();
-      var force = G / distancesq;
-      desired.setMag(force);
-      this.vel.limit(7);
-      return desired;
-    }
-  };
-
-  Star.prototype.repulse = function (target) {
-    var desired = p5.Vector.sub(target, this.pos);
-    var d = desired.mag();
-    if (d < 80) {
-      this.allowRepulse = true;
-      var distancesq = desired.magSq();
-      var force = 500 / distancesq * this.weight;
-      desired.setMag(-force);
-      return desired;
-    } else
-    {
-      this.allowRepulse = false;
-      return p.createVector(0, 0);
-    }
-  };
-
-  Star.prototype.render = function () {
-    p.noStroke();
-    var color = p.color(this.color);
-    color.setAlpha(this.modAlpha());
-    p.fill(color);
-    p.ellipse(this.pos.x, this.pos.y, this.size, this.size);
-  };
-
-
-
-
-
-  // PARTICLE MOVING RANDOMLY
-  function RandomStar() {
-    this.pos = p.createVector(p.random(containerWidth), p.random(containerHeight));
-    this.vel = p.createVector(p.random(-3, 3), p.random(-3, 3));
-    this.weight = p.random(0.5, 1.5);
-    this.size = p.random(2, 4);
-    this.corner = p.createVector(0, 0);
-    this.color = p.color(p.random(starsColor));
-    this.alpha;
-  }
-
-  RandomStar.prototype.modAlpha = function (dist) {
-    var alpha = p.map(dist, 0, containerWidth * 0.8, 0, 255);
-    return alpha;
-
-  };
-
-  RandomStar.prototype.checkBoundaries = function () {
-    if (this.pos.x > containerWidth || this.pos.x < 0) {
-      this.vel.x = this.vel.x * -1;
-    }
-    if (this.pos.y > containerHeight || this.pos.y < 0) {
-      this.vel.y = this.vel.y * -1;
-    }
-  };
-
-  RandomStar.prototype.update = function () {
-    this.checkBoundaries();
-    this.pos.add(this.vel);
-
-    var dist = this.pos.sub(this.corner);
-    this.alpha = this.modAlpha(dist.mag());
-  };
-
-  RandomStar.prototype.render = function () {
-    var c = this.color;
-    c.setAlpha(this.alpha);
-    p.fill(c);
-    p.ellipse(this.pos.x, this.pos.y, this.size, this.size);
-  };
-
-  // CREATE RANDOMSTAR
-  for (var i = 0; i < 150; i++) {if (window.CP.shouldStopExecution(0)) break;
-    var randStar = new RandomStar();
-    RandomStars.push(randStar);
-  }window.CP.exitedLoop(0);
-
-
-
-
-
-  p.setup = function () {
-    p.createCanvas(containerWidth, containerHeight, 'WEBGL');
-    p.pixelDensity(1);
-    p.background(bgColor);
-    var btc = p.loadImage(btcPath, function (img) {
-      // p.image(img, 0, 0);
-      btc.resize(smallSize, smallSize);
-      btc.loadPixels();
-      for (var x = 0; x < btc.width; x++) {if (window.CP.shouldStopExecution(1)) break;
-        for (var y = 0; y < btc.height; y++) {if (window.CP.shouldStopExecution(2)) break;
-          var index = (x + y * btc.width) * 4;
-          if (btc.pixels[index] < 200) {// if channel red < 200 == black in this case
-            if (Math.round(p.random(100)) < 70) {//get only % of the points, randomly
-              var initVec = p.createVector(x, y);
-              var pos = translatePoint(initVec);
-              positions.btc.push(pos);
-              Stars.push(new Star(pos));
-            }
-          }
-        }window.CP.exitedLoop(2);
-      }window.CP.exitedLoop(1);
-    }); // close callback loader image
-    p.pixelDensity();
-  };
-
-  p.draw = function () {
-    p.background(bgColor);
-    for (var k = 0; k < Stars.length; k++) {if (window.CP.shouldStopExecution(3)) break;
-      Stars[k].move();
-      Stars[k].update();
-      Stars[k].render();
-    }window.CP.exitedLoop(3);
-    for (var j = 0; j < RandomStars.length; j++) {if (window.CP.shouldStopExecution(4)) break;
-      RandomStars[j].update();
-      RandomStars[j].render();
-    }window.CP.exitedLoop(4);
-  };
-
-  p.windowResized = function () {
-    containerWidth = $('#container-p5').width();
-    containerHeight = $('#container-p5').height();
-    p.resizeCanvas(containerWidth, containerHeight);
-  };
-
-};
-
-var heroSketch = new p5(sketch, window.document.getElementById('container-p5'));
-
-var tlOpening = new TimelineMax({
-  onStart: function () {
-    TweenMax.fromTo('#container-p5', 8, { autoAlpha: 0 }, { autoAlpha: 1 });
-  },
-  delay: 1 });
-
-
-tlOpening.
-fromTo('.hero h1 span:nth-child(1)', 1.8, { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, ease: Power2.easeOut }, 2.2).
-fromTo('.hero h1 span:nth-child(3)', 1.8, { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, ease: Power2.easeOut }, 2.4).
-fromTo('.hero h2', 1, { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0 }, 3.2);
-//# sourceURL=pen.js
-    </script>
-
+  
+  
   
 </body>
 
 </html>
-"
-      sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-downloads allow-presentation" allow="accelerometer; camera; encrypted-media; display-capture; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write; web-share" allowTransparency="true"
-      allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
-      </iframe>
-  </div>
-  
-</body>
-  <!-- Brevo Conversations {literal} -->
-  <script>
-      (function(d, w, c) {
-          w.BrevoConversationsID = '653f9b6c5ab3f0383c09f82b';
-          w[c] = w[c] || function() {
-              (w[c].q = w[c].q || []).push(arguments);
-          };
-          var s = d.createElement('script');
-          s.async = true;
-          s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
-          if (d.head) d.head.appendChild(s);
-      })(document, window, 'BrevoConversations');
-  </script>
-  <!-- /Brevo Conversations {/literal} -->
-</html>
-
