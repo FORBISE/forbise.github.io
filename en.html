@@ -212,13 +212,13 @@
 
   function chybaPolohy(err) {
     console.warn("Nepodarilo sa získať polohu: " + err.message);
-    document.getElementById("lokacia").innerHTML = "<strong>Poloha:</strong> Nepodarilo sa získať polohu.";
+    document.getElementById("lokacia").innerHTML = "<strong>Poloha:</strong> Unable to retrieve location, contact support contact@forbies.eu .";
   }
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(zobrazPolohu, chybaPolohy);
   } else {
-    document.getElementById("lokacia").innerHTML = "<strong>Poloha:</strong> Geolokácia nie je podporovaná.";
+    document.getElementById("lokacia").innerHTML = "<strong>Poloha:</strong> Geolocation is not supported, contact support contact@forbies.eu.";
   }
 </script>
 
