@@ -1,4 +1,39 @@
 <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <script>
+    // Získanie jazyka prehliadača
+    var userLanguage = navigator.language || navigator.userLanguage;
+
+    // Získanie lokácie
+    var userCountry = navigator.language || navigator.userLanguage;
+
+    // Funkcia na presmerovanie
+    function redirectUser() {
+        if (userLanguage.startsWith('en')) {
+            window.location.href = 'https://forbies.eu';
+        } else if (userCountry === 'hu') {
+            window.location.href = '/hu.html';
+        } else if (userCountry === 'sk') {
+            window.location.href = '/sk.html';
+        } else if (userCountry === 'cz') {
+            window.location.href = '/cz.html';
+        } else if (userCountry === 'pl') {
+            window.location.href = '/pl.html';
+        } else {
+            window.location.href = 'https://forbies.eu'; // Presmerovanie na základnú stránku pre neznáme lokácie alebo jazyky
+        }
+    }
+
+    // Volanie funkcie na načítanie stránky
+    redirectUser();
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
 <html lang='en' class=''>
 
 <head>
