@@ -12,9 +12,7 @@
 
     // Funkcia na presmerovanie
     function redirectUser() {
-        if (userLanguage.startsWith('en')) {
-            window.location.href = 'https://forbies.eu';
-        } else if (userCountry === 'hu') {
+        if (userCountry === 'hu') {
             window.location.href = '/hu.html';
         } else if (userCountry === 'sk') {
             window.location.href = '/sk.html';
