@@ -216,3 +216,44 @@
 </body>
 
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #lokacia {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="lokacia"></div>
+
+<script>
+  function zobrazPolohu(position) {
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
+    
+    var lokacia = "Šírka: " + lat + "°, Dĺžka: " + lon + "°";
+
+    document.getElementById("lokacia").innerHTML = "<strong>Poloha:</strong> " + lokacia;
+  }
+
+  function chybaPolohy(err) {
+    console.warn("Nepodarilo sa získať polohu: " + err.message);
+    document.getElementById("lokacia").innerHTML = "<strong>Poloha:</strong> Nepodarilo sa získať polohu.";
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(zobrazPolohu, chybaPolohy);
+  } else {
+    document.getElementById("lokacia").innerHTML = "<strong>Poloha:</strong> Geolokácia nie je podporovaná.";
+  }
+</script>
+
+</body>
+</html>
