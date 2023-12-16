@@ -1,56 +1,182 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en' class=''>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" type="image/png" href="https://allstudios.eu/forbies.png">
-  <title>404 Page Not Found</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-image: url('https://cdn.forbies.eu/png/404.png');
-      background-size: cover;
-      background-position: center;
-      font-family: Arial, sans-serif;
-      color: #fff;
-      text-align: center;
-    }
 
-    .content {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 20px;
-      border-radius: 10px;
-    }
+  <meta charset='UTF-8'>
+  <title>404 PAGE NOT FAUND</title>
 
-    .contact-email {
-      margin-top: 20px;
-      font-size: 18px;
-    }
+  <meta name="robots" content="noindex">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.forbies.eu/favicon.ico">
+  <link rel="mask-icon" href="/https://cdn.forbies.eu/favicon.ico" color="#111">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,400' rel='stylesheet' type='text/css'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <style id="INLINE_PEN_STYLESHEET_ID">
+    *, :before, :after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background: #E3F2FD;
+  min-width: 275px;
+  height: 100vh;
+  margin: 0 10vw;
+  overflow: hidden;
+  color: #138FF2;
+  font-family: Roboto;
+}
+
+.wrapper {
+  flex-grow: 2;
+  width: 40vw;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 6em;
+  font-weight: 100;
+}
+
+p {
+  width: 95%;
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+
+.buttons {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+span {
+  display: block;
+  text-transform: uppercase;
+  color: #B9DDFB;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  padding: 0.8em 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  border: 3px solid #B9DDFB;
+  color: #138FF2;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+a:hover {
+  color: #E3F2FD;
+}
+a:hover:before {
+  top: 0;
+}
+a:before {
+  content: "";
+  background: #138FF2;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.space {
+  width: 75px;
+  height: calc(50vh + 37.5px);
+  border-top-left-radius: 37.5px;
+  border-top-right-radius: 37.5px;
+  overflow: hidden;
+  margin: calc(50vh - 37.5px) auto 0 auto;
+  position: relative;
+  pointer-events: none;
+  -webkit-transform: translateZ(0);
+}
+
+.blackhole {
+  border: 5px solid #1674D1;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.blackhole:after {
+  content: "";
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  border: 5px solid #1674D1;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  z-index: 5;
+  transform: rotate(45deg);
+}
+
+.ship {
+  height: 150px;
+  width: 55px;
+  margin-left: 10px;
+  background: url("https://cbwconline.com/IMG/Codepen/Space%20Ship.svg") center/contain no-repeat;
+  animation: blackhole 4s infinite linear;
+  position: absolute;
+  bottom: -150px;
+}
+
+@keyframes blackhole {
+  to {
+    transform: translateY(-100vh);
+  }
+}
+@media (max-width: 600px) {
+  body {
+    margin: 0 5vw;
+  }
+}
   </style>
+
+  
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6d8bf8b4b479137260842506acbb12717dace0823c023e08b96360e60b0840d9.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
 </head>
+
 <body>
-  <div class="content">
-    <h1>404 - Page Not Found</h1>
-    <p>Oops! It looks like the page you are looking for does not exist.</p>
-    <p class="contact-email">Contact us at <a href="mailto:contact@forbies.eu">contact@forbies.eu</a></p>
-    <!-- Môžeš pridať ďalší obsah alebo odkazy podľa potreby -->
-  </div>
+  
+<div class="wrapper">
+  <h1>Hmm.</h1>
+  <p>You have come across a page that does not exist or is blocked. </p>
+  <div class="buttons"><a href="/index.html">home</a><br/><span>Help me out</span></div>
+</div>
+<div class="space">
+  <div class="blackhole"></div>
+  <div class="ship"></div>
+</div>
+  
+  
 </body>
+
 </html>
-<script>
-    (function(d, w, c) {
-        w.BrevoConversationsID = '65636e1814dc59517c286158';
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        var s = d.createElement('script');
-        s.async = true;
-        s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
-        if (d.head) d.head.appendChild(s);
-    })(document, window, 'BrevoConversations');
-</script>
